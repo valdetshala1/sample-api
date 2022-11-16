@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: app-config
+    namespace: tests
+data:
+  config.json: |-
+    {
+        "RedisHost": "redis-svc"
+    }
